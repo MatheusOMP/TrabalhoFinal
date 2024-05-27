@@ -12,9 +12,9 @@ class Funcionario{
         string nome;
     public:
         Funcionario(string id, string cpf, string nome);
-        string getId();
-        string getCPF();
-        string getNome();
+        string setId();
+        string setCPF();
+        string setNome();
 };
 
 #endif

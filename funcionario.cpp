@@ -7,7 +7,7 @@ using namespace std;
 
 Funcionario::Funcionario(string id, string cpf, string nome):id(id), cpf(cpf), nome(nome){}
 
-string Funcionario::getCPF(){
+string Funcionario::setCPF(){
     
     string cpf;
     int i;
@@ -32,21 +32,19 @@ string Funcionario::getCPF(){
     }
 
     cout << "deu certo xd" << endl;
-        
-    return 0;
 }
 
 
 
 
 
-string Funcionario::getNome()
+string Funcionario::setNome()
 {
     return this->nome;
 }
 
 
-string Funcionario::getCPF()
+string Funcionario::setCPF()
 {
     return this->cpf;
 }
