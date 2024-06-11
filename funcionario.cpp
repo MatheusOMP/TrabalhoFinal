@@ -4,7 +4,7 @@
 #include <stdexcept>
 
 using namespace std;
-
+Funcionario::~Funcionario();
 Funcionario::Funcionario(string id, string cpf, string nome):id(id), cpf(cpf), nome(nome){}
 
 string Funcionario::setCPF(){
@@ -44,7 +44,7 @@ string Funcionario::setNome()
 }
 
 
-string Funcionario::setCPF()
+string Funcionario::setId()
 {
-    return this->cpf;
+    return this->id;
 }

@@ -12,6 +12,9 @@ class Setor{
         string setorID;
     public:
         Setor(string nome, string setorID);
+        ~Setor();
+        string setNome();
+        string set_setorID();
 };
 
 #endif
