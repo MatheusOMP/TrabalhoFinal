@@ -8,6 +8,7 @@ Funcionario::~Funcionario(){};
 Funcionario::Funcionario(){};
 Funcionario::Funcionario(string id, string cpf, string nome):id(id), cpf(cpf), nome(nome){}
 
+/*
 string Funcionario::setCPF(){
     
     string cpf;
@@ -34,18 +35,22 @@ string Funcionario::setCPF(){
 
     cout << "deu certo xd" << endl;
 }
+*/
+
+string Funcionario::getCPF() {
+
+    return this->cpf;
+}
 
 
 
-
-
-string Funcionario::setNome()
+string Funcionario::getNome()
 {
     return this->nome;
 }
 
 
-string Funcionario::setId()
+string Funcionario::getId()
 {
     return this->id;
 }

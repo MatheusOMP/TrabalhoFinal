@@ -14,9 +14,9 @@ class Funcionario{
         Funcionario();
         ~Funcionario();
         Funcionario(string id, string cpf, string nome);
-        string setId();
-        string setCPF();
-        string setNome();
+        string getId();
+        string getCPF();
+        string getNome();
 };
 
 #endif
