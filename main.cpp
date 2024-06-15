@@ -1,6 +1,6 @@
-#include "funcionario.hpp"
-#include "Funcionarios.hpp"
-#include "Setor.hpp"
+#include "Core/funcionario.hpp"
+#include "Funcionarios/Funcionarios.hpp"
+#include "Core/Setor.hpp"
 
 #include <iostream>
 using namespace std;
@@ -10,7 +10,5 @@ int main(){
     Setor* Engenharia= new Setor("Engenharia","321");
     Engenharia->PushFuncionario(Carlos);
 
-    for (auto a:Engenharia*){
-        cout<<a<<endl;
-    }
+    
 }
