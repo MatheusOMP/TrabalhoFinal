@@ -2,9 +2,8 @@
 #define DESENVOLVEDOR_FRONTEND
 
 #include "..//Core/Funcionario.hpp/"
-#include "..//Core//Acesso.hpp"
 
-class Desenvolvedor_Frontend:public Funcionario, public Acesso{
+class Desenvolvedor_Frontend:public Funcionario{
     public:
         Desenvolvedor_Frontend(string id, string cpf, string nome);
         ~Desenvolvedor_Frontend();
