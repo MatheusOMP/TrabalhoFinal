@@ -6,13 +6,3 @@ class Engenheiro_de_software:public Funcionario{
         Engenheiro_de_software(string id, string cpf, string nome);
         ~Engenheiro_de_software();
 };
-
-
-class Desenvolvedor_Frontend:public Funcionario{};
-
-class Desenvolvedor_Fullstack:public Funcionario{};
-
-
-class Acesso_Backend{};
-
-class Acesso_Frontend{};

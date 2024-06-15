@@ -7,6 +7,7 @@ class Desenvolvedor_Backend:public Funcionario{
     public:
         Desenvolvedor_Backend(string id, string cpf, string nome);
         ~Desenvolvedor_Backend();
+        int setMod(int modificador);
 };
 
 #endif
