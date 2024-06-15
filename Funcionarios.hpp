@@ -3,16 +3,11 @@
 
 class Engenheiro_de_softwere:public Funcionario{
     public:
-        Setor* setor;
-    public:
-        Engenheiro_de_softwere(string id, string cpf, string nome, Setor* setor){
+        Engenheiro_de_softwere(string id, string cpf, string nome){
             id=this->setId();
             cpf=this->setCPF();
             nome=this->setNome();
         }
-        Setor* setSetor(){
-            
-        };
 };
 
 class Desenvolvedor_Backend:public Funcionario{};

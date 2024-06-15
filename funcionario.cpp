@@ -4,7 +4,8 @@
 #include <stdexcept>
 
 using namespace std;
-Funcionario::~Funcionario();
+Funcionario::~Funcionario(){};
+Funcionario::Funcionario(){};
 Funcionario::Funcionario(string id, string cpf, string nome):id(id), cpf(cpf), nome(nome){}
 
 string Funcionario::setCPF(){
