@@ -13,6 +13,9 @@ class Funcionario : public InvalidCPF {
         int id;
         string cpf;
         string nome;
+    public:
+        int modificadorAcesso;
+
     private:
         void setCPF(string cpf);
 
