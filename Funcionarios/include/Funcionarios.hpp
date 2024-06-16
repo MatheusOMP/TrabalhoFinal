@@ -1,10 +1,12 @@
-#include "funcionario.hpp"
+/*
+
+#include "Funcionario.hpp"
 #include "Setor.hpp"
 
 class Engenheiro_de_softwere:public Funcionario{
     public:
         Engenheiro_de_softwere(string id, string cpf, string nome){
-            id=this->setId();
+            id=this->getId();
             cpf=this->setCPF();
             nome=this->setNome();
         }
@@ -21,3 +23,5 @@ class Estagiario:public Funcionario{};
 class Acesso_Backend{};
 
 class Acesso_Frontend{};
+
+*/
