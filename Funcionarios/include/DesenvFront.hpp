@@ -1,7 +1,7 @@
 #ifndef DESENVOLVEDOR_FRONTEND
 #define DESENVOLVEDOR_FRONTEND
 
-#include "..//Core/Funcionario.hpp/"
+#include "../../Core/include/Funcionario.hpp"
 
 class Desenvolvedor_Frontend:public Funcionario{
     public:

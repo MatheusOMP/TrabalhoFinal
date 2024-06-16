@@ -1,14 +1,11 @@
 #include "../include/Setor.hpp"
 
+int Setor::count = 0;
+
 Setor::Setor(string nome) : nome(nome) {
     
-    if(flag)
-        count++;
-    else {
-        flag = true;
-        count = 0;
-    }
-    setorID = count;
+    this->setorID = count;
+    count ++;
 };
 
 Setor::~Setor(){};

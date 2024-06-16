@@ -1,7 +1,7 @@
 #ifndef DESENVOLVEDOR_FULLSTACK
 #define DESENVOLVEDOR_FULLSTACK
 
-#include "..//Core/Funcionario.hpp/"
+#include "../../Core/include/Funcionario.hpp"
 
 class Desenvolvedor_Fullstack:public Funcionario{
     public:

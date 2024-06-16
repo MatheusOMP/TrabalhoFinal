@@ -3,6 +3,8 @@
 
 Funcionario::~Funcionario(){};
 
+int Funcionario::count = 0;
+
 void Funcionario::setCPF(string cpf) {
 
     if(cpf.size() != 14)
@@ -12,15 +14,10 @@ void Funcionario::setCPF(string cpf) {
     this->cpf = cpf;
 }
 
-Funcionario::Funcionario(string cpf, string nome) :  nome(nome) {
+Funcionario::Funcionario(string cpf, string nome) : nome(nome) {
 
-    if(flag)
-        count++;
-    else {
-        flag = true;
-        count = 0;
-    }
-    id = count;
+    this->id = count;
+    count ++;
 
     try {
 

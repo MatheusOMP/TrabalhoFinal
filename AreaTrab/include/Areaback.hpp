@@ -1,8 +1,8 @@
 #ifndef AREA_BACK
 #define AREA_BACK
 
-#include "..//Core//Acesso.hpp"
-#include "..//Core//funcionario.hpp"
+#include "../Core/include/Acesso.hpp"
+#include "../Core/include/funcionario.hpp"
 
 class AreaBack : public Acesso{
     public:

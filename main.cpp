@@ -1,5 +1,4 @@
 #include "Core/include/Funcionario.hpp"
-#include "Funcionarios/include/Funcionarios.hpp"
 #include "Core/include/Setor.hpp"
 
 #include <iostream>

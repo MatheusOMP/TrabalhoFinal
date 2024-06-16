@@ -1,11 +1,13 @@
 #ifndef DESENVOLVEDOR_BACKEND
 #define DESENVOLVEDOR_BACKEND
 
-#include "..//Core//funcionario.hpp"
+#include "../../Core/include/Funcionario.hpp"
 
-class Desenvolvedor_Backend:public Funcionario{
+using std::string;
+
+class Desenvolvedor_Backend:public Funcionario {
     public:
-        Desenvolvedor_Backend(string id, string cpf, string nome);
+        Desenvolvedor_Backend(string nome, string cpf);
         ~Desenvolvedor_Backend();
         int setMod(int modificador);
 };

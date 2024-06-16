@@ -9,6 +9,7 @@ class InvalidCPF : public std::exception {
         std::string msg;
     public:
         InvalidCPF(std::string msg);
+        InvalidCPF();
         std::string what();
 };
 

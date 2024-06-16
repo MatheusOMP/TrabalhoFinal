@@ -8,13 +8,12 @@ using std::string;
 
 class Funcionario : public InvalidCPF {
     private:
-        static int count;
-        static bool flag;
         int id;
         string cpf;
         string nome;
     public:
         int modificadorAcesso;
+        static int count;
 
     private:
         void setCPF(string cpf);

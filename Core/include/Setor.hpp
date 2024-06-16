@@ -7,12 +7,11 @@
 
 using std::string;
 
-class Setor{
+class Setor {
     private:
+        static int count;
         int setorID;
         string nome;
-        static int count;
-        static bool flag;
     protected:
         std::vector <Funcionario*> Funcionarios_setor;
         Setor(string nome);
