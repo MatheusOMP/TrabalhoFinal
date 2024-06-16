@@ -1,13 +1,13 @@
 #ifndef ACESSO
 #define ACESSO
 
-#include "funcionario.hpp"
+#include "Funcionario.hpp"
 
 class Acesso {
     protected:
         Acesso();
         ~Acesso();
-        virtual bool verificacao_de_acesso(Funcionario* funcionario)=0;
+        virtual bool verificacao_de_acesso(Funcionario* funcionario) = 0;
 };
 
 #endif

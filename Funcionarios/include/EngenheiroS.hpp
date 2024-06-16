@@ -1,5 +1,5 @@
-#include "funcionario.hpp"
-#include "Setor.hpp"
+#include "../../Core/include/Funcionario.hpp"
+#include "../../Core/include/Setor.hpp"
 
 class Engenheiro_de_software:public Funcionario{
     public:

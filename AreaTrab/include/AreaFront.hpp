@@ -1,8 +1,8 @@
 #ifndef AREA_FRONT
 #define AREA_FORNT
 
-#include "..//Core//Acesso.hpp"
-#include "..//Core//funcionario.hpp"
+#include "../Core/include/Acesso.hpp"
+#include "../Core/include/funcionario.hpp"
 
 class AreaFront : public Acesso{
     public:

@@ -1,7 +1,7 @@
 #ifndef ESTAGIARIO
 #define ESTAGIARIO
 
-#include "..//Core/Funcionario.hpp/"
+#include "../../Core/include/Funcionario.hpp"
 
 
 class Estagiario:public Funcionario{
