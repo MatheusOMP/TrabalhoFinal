@@ -24,6 +24,7 @@ class Funcionario : public InvalidCPF {
         int getId();
         string getCPF();
         string getNome();
+        virtual int setMod(int modificador)=0;
 };
 
 #endif

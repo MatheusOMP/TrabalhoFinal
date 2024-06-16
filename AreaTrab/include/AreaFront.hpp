@@ -1,13 +1,14 @@
 #ifndef AREA_FRONT
 #define AREA_FORNT
 
-#include "../Core/include/Acesso.hpp"
+#include "../Core/include/Setor.hpp"
 #include "../Core/include/funcionario.hpp"
 
-class AreaFront : public Acesso{
+class AreaFront : public Setor{
     public:
         AreaFront(Funcionario* front);
         ~AreaFront();
+        string getNome() override;
         bool verificacao_de_acesso(Funcionario* front) override;
 };
 
