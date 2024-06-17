@@ -7,7 +7,7 @@ class Desenvolvedor_Frontend:public Funcionario{
     public:
         Desenvolvedor_Frontend(string id, string cpf, string nome);
         ~Desenvolvedor_Frontend();
-        int setMod(int modificador);
+        int setMod(int modificador) override;
 };
 
 #endif

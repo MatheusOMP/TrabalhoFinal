@@ -1,7 +1,7 @@
 #include "../include/Areafront.hpp"
-#include <iostream>
 
 AreaFront::AreaFront(Funcionario* front) {
+    getNome()="Area de desenvolvimento frontend";
     if (verificacao_de_acesso(front)==true)
         std::cout<<"Bem vindo"<< std::endl;
     else

@@ -1,7 +1,7 @@
 #include "../include/Areaback.hpp"
-#include <iostream>
 
 AreaBack::AreaBack(Funcionario* back) {
+    getNome()="Area de desenvolvimento backend";
     if (verificacao_de_acesso(back)==true)
         std::cout << "Bem vindo" << std::endl;
     else

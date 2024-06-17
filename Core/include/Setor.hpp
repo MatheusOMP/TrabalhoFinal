@@ -4,6 +4,7 @@
 #include "Funcionario.hpp"
 #include <vector>
 #include <string>
+#include <iostream>
 
 using std::string;
 
@@ -14,13 +15,14 @@ class Setor {
         string nome;
     protected:
         std::vector <Funcionario*> Funcionarios_setor;
-        Setor(string nome);
+        Setor();
         ~Setor();
         void addFuncionario(Funcionario* Funcionario);
     public:
-        string getNome();
+        virtual string getNome()=0;
         int getSetorID();
         std::vector<Funcionario*> getFuncionarios();
+        virtual bool verificacao_de_acesso(Funcionario* funcionario) = 0;
 };
 
 #endif
