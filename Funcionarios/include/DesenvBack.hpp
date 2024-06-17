@@ -9,7 +9,7 @@ class Desenvolvedor_Backend:public Funcionario {
     public:
         Desenvolvedor_Backend(string nome, string cpf);
         ~Desenvolvedor_Backend();
-        int setMod(int modificador) override;
+        int setMod() override;
 };
 
 #endif

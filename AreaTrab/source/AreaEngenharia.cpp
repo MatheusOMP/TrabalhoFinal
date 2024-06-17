@@ -10,5 +10,15 @@ AreaEngenharia::AreaEngenharia(Funcionario* Engenharia) {
 AreaEngenharia::~AreaEngenharia(){}
 
 bool AreaEngenharia::verificacao_de_acesso(Funcionario* Engenharia) {
-    return (Engenharia->modificadorAcesso==00)?true:false;
+    try
+    {
+        if (Engenharia->modificadorAcesso==00){
+            return true;
+        }
+        else throw InvalidAccess("Acesso negado, modificador invalido");
+    }
+    catch(InvalidAccess& e)
+    {
+        std::cout << e.what() << std::endl;
+    }
 }

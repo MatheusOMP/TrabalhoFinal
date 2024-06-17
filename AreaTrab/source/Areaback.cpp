@@ -10,5 +10,15 @@ AreaBack::AreaBack(Funcionario* back) {
 AreaBack::~AreaBack(){}
 
 bool AreaBack::verificacao_de_acesso(Funcionario* back) {
-    return (back->modificadorAcesso==01 || back->modificadorAcesso==11)?true:false;
+    try
+    {
+        if (back->modificadorAcesso==01 || back->modificadorAcesso==11){
+            return true;
+        }
+        else throw InvalidAccess("Acesso negado, modificador invalido");
+    }
+    catch(InvalidAccess& e)
+    {
+        std::cout << e.what() << std::endl;
+    }
 }
