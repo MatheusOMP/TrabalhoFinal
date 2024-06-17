@@ -2,7 +2,7 @@
 
 int Setor::count = 0;
 
-Setor::Setor(string nome) : nome(nome) {
+Setor::Setor(){
     
     this->setorID = count;
     count ++;
