@@ -6,7 +6,6 @@ using namespace std;
 
 int main(){
     
-    Funcionario *f = new Funcionario("3123", "arnaldo");
-    cout << f->getCPF() << endl;
+    
     
 }
