@@ -1,9 +1,11 @@
 #include "../include/Exceptions.hpp"
 
-InvalidCPF::InvalidCPF(std::string msg) : msg(msg) {}
-InvalidCPF::InvalidCPF() : msg("error\n") {}
+InvalidCPF::InvalidCPF(std::string msg) {
+
+    this->msg = msg;
+}
 
 std::string InvalidCPF::what() {
 
-    return this->msg;
+    return "CPF invalido: " + this->msg;
 }

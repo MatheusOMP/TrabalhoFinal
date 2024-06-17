@@ -6,7 +6,7 @@
 
 using std::string;
 
-class Funcionario : public InvalidCPF {
+class Funcionario {
     private:
         int id;
         string cpf;
@@ -24,6 +24,7 @@ class Funcionario : public InvalidCPF {
         int getId();
         string getCPF();
         string getNome();
+        virtual int setMod(int modificador)=0;
 };
 
 #endif

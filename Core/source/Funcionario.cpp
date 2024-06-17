@@ -8,13 +8,13 @@ int Funcionario::count = 0;
 void Funcionario::setCPF(string cpf) {
 
     if(cpf.size() != 14)
-        throw InvalidCPF("Tamanho de CPF invalido!\n");
+        InvalidCPF("Tamanho");
     if(cpf.find_first_not_of("0123456789.-") != string::npos)
-        throw InvalidCPF("Formato de CPF invalido!\n");
+        InvalidCPF("Formato");
     this->cpf = cpf;
 }
 
-Funcionario::Funcionario(string cpf, string nome) : nome(nome) {
+Funcionario::Funcionario(string nome, string cpf) : nome(nome) {
 
     this->id = count;
     count ++;
@@ -30,35 +30,6 @@ Funcionario::Funcionario(string cpf, string nome) : nome(nome) {
     }
 
 }
-
-/*
-string Funcionario::setCPF(){
-    
-    string cpf;
-    int i;
-
-
-    entrada:
-    cin >> cpf;
-
-    try {
-
-        
-            throw invalid_argument("Tamanho de CPF invalido!");
-
-        
-            throw invalid_argument("CPF invalido!");
-    }
-    
-    catch(invalid_argument& e) {
-        cout << e.what() << endl;
-        
-        goto entrada;
-    }
-
-    cout << "deu certo xd" << endl;
-}
-*/
 
 string Funcionario::getCPF() {
 
