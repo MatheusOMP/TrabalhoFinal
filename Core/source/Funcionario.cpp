@@ -8,9 +8,9 @@ int Funcionario::count = 0;
 void Funcionario::setCPF(string cpf) {
 
     if(cpf.size() != 14)
-        InvalidCPF("Tamanho");
+        throw InvalidCPF("Tamanho");
     if(cpf.find_first_not_of("0123456789.-") != string::npos)
-        InvalidCPF("Formato");
+        throw InvalidCPF("Formato");
     this->cpf = cpf;
 }
 
