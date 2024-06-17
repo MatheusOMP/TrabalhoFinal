@@ -8,7 +8,6 @@ class AreaFront : public Setor{
     public:
         AreaFront(Funcionario* front);
         ~AreaFront();
-        string getNome() override;
         bool verificacao_de_acesso(Funcionario* front) override;
 };
 

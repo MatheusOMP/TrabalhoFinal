@@ -8,7 +8,6 @@ class AreaBack : public Setor{
     public:
         AreaBack(Funcionario* back);
         ~AreaBack();
-        string getNome() override;
         bool verificacao_de_acesso(Funcionario* back) override;
 };
 
