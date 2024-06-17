@@ -6,7 +6,7 @@
 
 using std::string;
 
-class Funcionario : public InvalidCPF {
+class Funcionario {
     private:
         int id;
         string cpf;
