@@ -4,6 +4,7 @@
 #include "Funcionario.hpp"
 #include <vector>
 #include <string>
+#include <stdexcept>
 
 using std::string;
 
