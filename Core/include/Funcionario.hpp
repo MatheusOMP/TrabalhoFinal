@@ -23,7 +23,6 @@ class Funcionario {
         int getId();
         string getCPF();
         string getNome();
-        virtual int setMod()=0;
 };
 
 #endif

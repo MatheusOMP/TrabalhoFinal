@@ -68,3 +68,12 @@ std::vector<Funcionario *> Setor::getFuncionarios() {
     
     return this->Funcionarios_setor;
 }
+
+bool Setor::verificacao_de_acesso(Funcionario *funcionario, Setor *setor) {
+
+    for(auto f : setor->Funcionarios_setor)
+        if(f->getId() == funcionario->getId())
+            return true;
+    
+    throw InvalidAccess("funcionario nao pertence ao setor");
+}

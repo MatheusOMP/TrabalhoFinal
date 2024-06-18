@@ -20,11 +20,12 @@ class Setor {
         void addFuncionario(Funcionario *funcionario);
         void rmFuncionario(Funcionario *funcionario);
         void mvFuncionario(Funcionario *funcionario, Setor *setor);
+        virtual void acessarSetor(Funcionario *Funcionario, Setor * setor) = 0;
     public:
-        virtual string getNome()=0;
+        string getNome();
         int getSetorID();
         std::vector<Funcionario*> getFuncionarios();
-        virtual bool verificacao_de_acesso(Funcionario* funcionario) = 0;
+        bool verificacao_de_acesso(Funcionario* funcionario, Setor *setor);
 };
 
 #endif
