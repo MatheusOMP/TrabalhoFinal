@@ -20,4 +20,13 @@ class InvalidAccess : public std::exception {
         std::string what();
 };
 
+class VectorFail : public std::exception {
+
+    private:
+        std::string msg;
+    public:
+        VectorFail(std::string msg);
+        std::string what();
+};
+
 #endif

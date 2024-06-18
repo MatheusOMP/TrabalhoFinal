@@ -12,7 +12,6 @@ class Funcionario {
         string cpf;
         string nome;
     public:
-        int modificadorAcesso;
         static int count;
 
     private:
@@ -24,7 +23,6 @@ class Funcionario {
         int getId();
         string getCPF();
         string getNome();
-        virtual int setMod()=0;
 };
 
 #endif
