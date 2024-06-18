@@ -7,7 +7,6 @@ class Desenvolvedor_Fullstack:public Funcionario{
     public:
         Desenvolvedor_Fullstack(string nome, string cpf);
         ~Desenvolvedor_Fullstack();
-        int setMod() override;
 };
 
 #endif

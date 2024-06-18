@@ -1,24 +1,14 @@
 #include "../include/Areafront.hpp"
 
-AreaFront::AreaFront(Funcionario* front) {
-    getNome()="Area de desenvolvimento frontend";
-    if (verificacao_de_acesso(front)==true)
-        std::cout<<"Bem vindo"<< std::endl;
-    else
-        std::cout<<"Entrada nao autorizada"<<std::endl;
-}
-AreaFront::~AreaFront() {}
+AreaFront::AreaFront() {}
+AreaFront::~AreaFront(){}
 
-bool AreaFront::verificacao_de_acesso(Funcionario* front) {
-    try
-    {
-        if (front->modificadorAcesso==10 || front->modificadorAcesso==11){
-            return true;
-        }
-        else throw InvalidAccess("Acesso negado, modificador invalido");
+void AreaFront::acessarSetor(Funcionario* funcionario, Setor *setor) {
+    try {
+        if(verificacao_de_acesso(funcionario, this))
+            std::cout << "Bem vindo ao frontend" << std::endl;
     }
-    catch(InvalidAccess& e)
-    {
+    catch(InvalidAccess& e) {
         std::cout << e.what() << std::endl;
     }
 }

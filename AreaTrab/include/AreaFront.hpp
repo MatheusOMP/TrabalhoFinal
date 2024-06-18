@@ -6,9 +6,9 @@
 
 class AreaFront : public Setor{
     public:
-        AreaFront(Funcionario* front);
+        AreaFront();
         ~AreaFront();
-        bool verificacao_de_acesso(Funcionario* front) override;
+        void acessarSetor(Funcionario *Funcionario, Setor *setor) override;
 };
 
 #endif

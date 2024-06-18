@@ -6,9 +6,9 @@
 
 class AreaBack : public Setor{
     public:
-        AreaBack(Funcionario* back);
+        AreaBack();
         ~AreaBack();
-        bool verificacao_de_acesso(Funcionario* back) override;
+        void acessarSetor(Funcionario *Funcionario, Setor *setor) override;
 };
 
 #endif
