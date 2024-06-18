@@ -12,7 +12,6 @@ class Funcionario {
         string cpf;
         string nome;
     public:
-        int modificadorAcesso;
         static int count;
 
     private:

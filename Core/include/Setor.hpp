@@ -5,7 +5,6 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <stdexcept>
 
 using std::string;
 
@@ -18,7 +17,9 @@ class Setor {
         std::vector <Funcionario*> Funcionarios_setor;
         Setor();
         ~Setor();
-        void addFuncionario(Funcionario* Funcionario);
+        void addFuncionario(Funcionario *funcionario);
+        void rmFuncionario(Funcionario *funcionario);
+        void mvFuncionario(Funcionario *funcionario, Setor *setor);
     public:
         virtual string getNome()=0;
         int getSetorID();
