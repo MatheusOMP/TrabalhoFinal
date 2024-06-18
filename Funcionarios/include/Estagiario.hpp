@@ -6,9 +6,9 @@
 
 class Estagiario:public Funcionario{
     public:
-        Estagiario(string id, string cpf, string nome);
+        Estagiario(string nome, string cpf);
         ~Estagiario();
-        int setMod(int modificador) override;
+        int setMod() override;
 };
 
 #endif

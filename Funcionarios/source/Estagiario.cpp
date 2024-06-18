@@ -1,21 +1,23 @@
 #include "../include/Estagiario.hpp"
 #include <iostream>
+#include <stdexcept>
 
-Estagiario::Estagiario(string id, string cpf, string nome):Funcionario(nome, cpf){}
+Estagiario::Estagiario(string nome, string cpf):Funcionario(nome, cpf){}
 Estagiario::~Estagiario(){}
 
-int Estagiario::setMod(int modificadorAcesso){
+int Estagiario::setMod(){
     try
     {
-        modificadorAcesso=-1;
+        std::cin>>modificadorAcesso;
         if(modificadorAcesso!=01 || modificadorAcesso!=10 || modificadorAcesso!=00){
-            std::cin>>modificadorAcesso;
             return modificadorAcesso;
         }
+        else throw (InvalidAccess("Modificador de acesso invalido"));
     }
     catch(const std::exception& e)
     {
-        std::cerr << e.what() << '\n';
+        std::cout << e.what() << std::endl;
+        Estagiario::setMod();
     }
         
 

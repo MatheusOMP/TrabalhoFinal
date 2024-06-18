@@ -10,5 +10,15 @@ AreaFront::AreaFront(Funcionario* front) {
 AreaFront::~AreaFront() {}
 
 bool AreaFront::verificacao_de_acesso(Funcionario* front) {
-    return (front->modificadorAcesso==10 || front->modificadorAcesso==11)?true:false;
+    try
+    {
+        if (front->modificadorAcesso==10 || front->modificadorAcesso==11){
+            return true;
+        }
+        else throw InvalidAccess("Acesso negado, modificador invalido");
+    }
+    catch(InvalidAccess& e)
+    {
+        std::cout << e.what() << std::endl;
+    }
 }

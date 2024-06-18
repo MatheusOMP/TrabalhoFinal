@@ -9,7 +9,7 @@ file(GLOB AREATRAB_SOURCES "AreaTrab/source/*.cpp")
 set(SOURCES
     ${CORE_SOURCES}
     ${FUNCIONARIOS_SOURCES}
-    #${AREATRAB_SOURCES}
+    ${AREATRAB_SOURCES}
     main.cpp
 )
 
@@ -17,7 +17,7 @@ set(SOURCES
 include_directories(
     Core/include
     Funcionarios/include
-    #AreaTrab/include
+    AreaTrab/include
 )
 
 # Adicionar o executável
