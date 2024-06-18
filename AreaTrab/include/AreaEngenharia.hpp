@@ -6,9 +6,9 @@
 
 class AreaEngenharia : public Setor{
     public:
-        AreaEngenharia(Funcionario* Engenharia);
+        AreaEngenharia();
         ~AreaEngenharia();
-        bool verificacao_de_acesso(Funcionario* Engenharia) override;
+        void acessarSetor(Funcionario *Funcionario, Setor *setor) override;
 };
 
 #endif

@@ -8,7 +8,6 @@ class Estagiario:public Funcionario{
     public:
         Estagiario(string nome, string cpf);
         ~Estagiario();
-        int setMod() override;
 };
 
 #endif
