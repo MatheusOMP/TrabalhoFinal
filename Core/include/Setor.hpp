@@ -17,15 +17,16 @@ class Setor {
         std::vector <Funcionario*> Funcionarios_setor;
         Setor();
         ~Setor();
-        void addFuncionario(Funcionario *funcionario);
-        void rmFuncionario(Funcionario *funcionario);
-        void mvFuncionario(Funcionario *funcionario, Setor *setor);
-        virtual void acessarSetor(Funcionario *Funcionario, Setor * setor) = 0;
+        
     public:
         string getNome();
         int getSetorID();
         std::vector<Funcionario*> getFuncionarios();
         bool verificacao_de_acesso(Funcionario* funcionario, Setor *setor);
+        void addFuncionario(Funcionario *funcionario);
+        void rmFuncionario(Funcionario *funcionario);
+        void mvFuncionario(Funcionario *funcionario, Setor *setor);
+        virtual void acessarSetor(Funcionario *Funcionario) = 0;
 };
 
 #endif

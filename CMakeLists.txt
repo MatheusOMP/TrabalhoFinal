@@ -4,7 +4,7 @@ project(MyProject)
 # Definir as fontes dos diretórios Core e Funcionarios
 file(GLOB CORE_SOURCES "Core/source/*.cpp")
 file(GLOB FUNCIONARIOS_SOURCES "Funcionarios/source/*.cpp")
-file(GLOB AREATRAB_SOURCES "AreaTrab/source/*.cpp")
+file(GLOB AREATRAB_SOURCES "Setores/source/*.cpp")
 
 set(SOURCES
     ${CORE_SOURCES}
@@ -17,7 +17,7 @@ set(SOURCES
 include_directories(
     Core/include
     Funcionarios/include
-    AreaTrab/include
+    Setores/include
 )
 
 # Adicionar o executável

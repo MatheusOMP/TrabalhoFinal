@@ -3,7 +3,7 @@
 AreaBack::AreaBack() {}
 AreaBack::~AreaBack(){}
 
-void AreaBack::acessarSetor(Funcionario* funcionario, Setor *setor) {
+void AreaBack::acessarSetor(Funcionario* funcionario) {
     try {
         if(verificacao_de_acesso(funcionario, this))
             std::cout << "Bem vindo ao backend" << std::endl;

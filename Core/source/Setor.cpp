@@ -26,11 +26,14 @@ void Setor::rmFuncionario(Funcionario *funcionario) {
 
     std::vector<Funcionario*>::iterator it;
     int c = 0;
+    Funcionario *f;
 
     for (it = Funcionarios_setor.begin(); it != Funcionarios_setor.end(); it++) {
         if ((*it)->getId() == funcionario->getId()) {
 
+            f = *it;
             Funcionarios_setor.erase(it);
+            f->~Funcionario();
             return;
         }
         else

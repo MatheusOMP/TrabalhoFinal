@@ -8,7 +8,7 @@ class AreaFront : public Setor{
     public:
         AreaFront();
         ~AreaFront();
-        void acessarSetor(Funcionario *Funcionario, Setor *setor) override;
+        void acessarSetor(Funcionario *Funcionario) override;
 };
 
 #endif

@@ -8,7 +8,7 @@ class AreaEngenharia : public Setor{
     public:
         AreaEngenharia();
         ~AreaEngenharia();
-        void acessarSetor(Funcionario *Funcionario, Setor *setor) override;
+        void acessarSetor(Funcionario *Funcionario) override;
 };
 
 #endif

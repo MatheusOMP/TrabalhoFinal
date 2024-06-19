@@ -3,7 +3,7 @@
 AreaFront::AreaFront() {}
 AreaFront::~AreaFront(){}
 
-void AreaFront::acessarSetor(Funcionario* funcionario, Setor *setor) {
+void AreaFront::acessarSetor(Funcionario* funcionario) {
     try {
         if(verificacao_de_acesso(funcionario, this))
             std::cout << "Bem vindo ao frontend" << std::endl;
