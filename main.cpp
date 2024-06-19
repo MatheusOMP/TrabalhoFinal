@@ -1,6 +1,6 @@
-#include "AreaTrab/include/AreaFront.hpp"
-#include "AreaTrab/include/Areaback.hpp"
-#include "AreaTrab/include/AreaEngenharia.hpp"
+#include "Setores/include/AreaFront.hpp"
+#include "Setores/include/Areaback.hpp"
+#include "Setores/include/AreaEngenharia.hpp"
 
 #include "Funcionarios/include/DesenvBack.hpp"
 #include "Funcionarios/include/DesenvFront.hpp"
