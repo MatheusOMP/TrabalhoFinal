@@ -32,8 +32,11 @@ int main() {
     
     setores[0]->acessarSetor(setores[0]->getFuncionarios()[0]);
     setores[0]->acessarSetor(setores[1]->getFuncionarios()[0]);
+
     setores[1]->mvFuncionario(setores[1]->getFuncionarios()[0], setores[0]);
+    
     setores[0]->acessarSetor(setores[0]->getFuncionarios()[1]);
+    
     setores[0]->rmFuncionario(setores[0]->getFuncionarios()[0]);
     
     
